@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Gana una Cuenta de Netflix Gratis</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #87CEEB; /* Color de fondo cambiado a rojo */
+    text-align: center;
+    padding: 50px;
+    font-size: 30px; /* Ajusta el tamaño de la letra en general aquí */
+}
+
+
+        .star {
+            font-size: 50px;
+            color: gold;
+            animation: spin 2s infinite linear;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .progress-bar {
+            width: 80%;
+            background-color: #ddd;
+            margin: 20px auto;
+            border-radius: 25px;
+            overflow: hidden;
+            position: relative;
+        }
+        .progress {
+            height: 30px;
+            background-color: #0000FF; /* Cambiado a azul */
+            text-align: center;
+            line-height: 30px;
+            color: white;
+        }
+        .netflix-logo {
+            width: 150px; /* Ajusta el tamaño aquí */
+            margin-top: 20px;
+        }
+        .logo {
+            width: 150px; /* Ajusta el tamaño aquí */
+            margin-top: 20px;
+        } 
+.disney-logo {
+            width: 150px; /* Ajusta el tamaño aquí */
+            margin-top: 20px;
+        }
+        .logo {
+            width: 150px; /* Ajusta el tamaño aquí */
+            margin-top: 20px;
+        }
+        .stars-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .stars-container .star {
+            font-size: 20px;
+            margin: 0 2px;
+        }
+        .claim-button {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 5px 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .claim-button:disabled {
+            background-color: grey;
+            cursor: not-allowed;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+            padding-top: 60px;
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto; /* Centrando el modal horizontalmente */
+            width: 50%; /* Ancho del modal ajustado */
+            padding: 20px; /* Relleno interno */
+            border: 1px solid #888;
+            text-align: center;
+            font-size: 24px; /* Tamaño de letra aumentado */
+            position: fixed; /* Fijando el modal en la pantalla */
+            top: 50%; /* Centrando verticalmente */
+            left: 50%; /* Centrando horizontalmente */
+            transform: translate(-50%, -50%); /* Ajustando la posición */
+        }
+<style>
+  
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        text-align: center;
+        padding: 50px;
+    }
+    .feathers-container {
+        position: relative;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+    .feather {
+        position: absolute;
+        font-size: 30px;
+        transform: rotate(180deg);  /* Gira las plumas para que apunten hacia arriba */
+        animation: fall 3s linear infinite;
+    }
+    .feather:nth-child(1) { left: 10%; animation-delay: 0s; }
+    .feather:nth-child(2) { left: 30%; animation-delay: 0.5s; }
+    .feather:nth-child(3) { left: 50%; animation-delay: 1s; }
+    .feather:nth-child(4) { left: 70%; animation-delay: 1.5s; }
+    .feather:nth-child(5) { left: 90%; animation-delay: 2s; }
+
+    @keyframes fall {
+        0% { top: -50px; opacity: 1; }
+        100% { top: 100px; opacity: 0; }
+    }
+</style>
+
+</head>
+
+
+<body>
+
+<body>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Papeleria_pide_y_recoja_2021.png" alt="Tu Logo" class="logo">
+    <h1>USUARIOS REGISTRADOS</h1>    
+    <p>actualización 06/10/2024 7:52 am</p>
+
+    <h2>Instrucciones:</h2>
+    <p>Conserva los comprobantes o registra tus transacciones obtenidos de lunes a domingo.</p>
+    <p>Bancolombia - Nequi (depósitos y retiros, no aplica facturas públicas ni consultas de saldo).</p>
+
+    <p>Anfitrion <br>Papelería pide y recoja 2021<br>Corresponsal bancario Bancolombia<br>Calle 7 A #2-14, Barrio Las Acasias</p>
+
+    <!-- Plumas cayendo -->
+    <div class="feathers-container">
+        <span class="feather">🪶</span>
+        <span class="feather">🪶</span>
+        <span class="feather">🪶</span>
+        <span class="feather">🪶</span>
+        <span class="feather">🪶</span>
+    </div>
+
+    <p><strong>perfil:</strong> henrry</p>
+    <p>Número de WASAP: 3163457645</p>
+    <p>cuando complete las estrellas podras reclamar tu cuenta.</p>
+    <p>Estrellas acumuladas: 24</p>
+
+
+
+       <h2>Progreso de Estrellas</h2>
+<div class="progress-bar" id="progress-bar-40">
+    <div class="progress" style="width: 60%;">24/40</div>
+    <button class="claim-button" onclick="showModal1()">Reclamar Premio 1</button>
+</div>
+
+<div class="stars-container" id="stars-container-40"></div>
+<p id="message-40">¡Te faltan 16 estrellas para alcanzar la meta de 40 estrellas!</p>
+
+<div class="progress-bar" id="progress-bar-90">
+    <div class="progress" style="width: 26.67%;">24/90</div>
+    <button class="claim-button" onclick="showModal2()">Reclamar Premio 2</button>
+</div>
+<div class="stars-container" id="stars-container-90"></div>
+<p id="message-90">¡Te faltan 66 estrellas para alcanzar la meta de 90 estrellas!</p>
+
+<div class="progress-bar" id="progress-bar-150">
+    <div class="progress" style="width: 16%;">24/150</div>
+    <button class="claim-button" onclick="showModal3()">Reclamar Premio 3</button>
+</div>
+<div class="stars-container" id="stars-container-150"></div>
+<p id="message-150">¡Te faltan 126 estrellas para alcanzar la meta de 150 estrellas!</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" class="netflix-logo">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg" alt="Disney Logo" class="disney-logo">
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Amazon_Prime_Video_logo.svg" alt="amazon prime video Logo" class="disney-logo">
+
+ 
+
+    <p>¡Disfruta de tus recompensas! 🎉📺🎁</p>
+   
+
+    <div id="myModal1" class="modal" onclick="redirectToWhatsApp()">
+    <div class="modal-content">
+        <p>¡Felicitaciones por alcanzar 40 bauchers! Has ganado 15 días gratis de nuestro servicio. Tu dedicación y esfuerzo son admirables. Sigue así y continúa participando para obtener aún más recompensas. ¡Estamos orgullosos de ti!</p>
+    </div>
+</div>
+
+<div id="myModal2" class="modal" onclick="redirectToWhatsApp()">
+    <div class="modal-content">
+        <p>¡Felicitaciones por alcanzar 90 bauchers! Has ganado un mes gratis de nuestro servicio. Tu dedicación y esfuerzo son admirables. Sigue así y continúa participando para obtener aún más recompensas. ¡Estamos orgullosos de ti!</p>
+    </div>
+</div>
+
+<div id="myModal3" class="modal" onclick="redirectToWhatsApp()">
+    <div class="modal-content">
+        <p>¡Felicitaciones por alcanzar 150 bauchers! Has ganado dos meses gratis de nuestro servicio. Tu dedicación y esfuerzo son admirables. Sigue así y continúa participando para obtener aún más recompensas. ¡Estamos orgullosos de ti!</p>
+    </div>
+</div>
+    </div>
+        <script>
+        function showModal1() {
+            const modal = document.getElementById("myModal1");
+            modal.style.display = "block";
+            const audio = new Audio('https://www.soundjay.com/button/sounds/button-16.mp3');
+            audio.play();
+        }
+
+        function showModal2() {
+            const modal = document.getElementById("myModal2");
+            modal.style.display = "block";
+            const audio = new Audio('https://www.soundjay.com/button/sounds/button-16.mp3');
+            audio.play();
+        }
+
+        function showModal3() {
+            const modal = document.getElementById("myModal3");
+            modal.style.display = "block";
+            const audio = new Audio('https://www.soundjay.com/button/sounds/button-16.mp3');
+            audio.play();
+        }
+
+        function redirectToWhatsApp() {
+            const modal1 = document.getElementById("myModal1");
+            const modal2 = document.getElementById("myModal2");
+            const modal3 = document.getElementById("myModal3");
+            modal1.style.display = "none";
+            modal2.style.display = "none";
+            modal3.style.display = "none";
+            const message = encodeURIComponent("He completado los baucher y quisiera reclamar una de estas: Netflix - Crunchyroll - Paramount+ - Disney+ - Amazon Prime 😊🎉");
+            window.location.href = `https://wa.me/message/LRXRLEUAVZQOH1?text=${message}`;
+        }
+
+        function checkProgress() {
+            const progressBars = document.querySelectorAll('.progress-bar');
+            progressBars.forEach(bar => {
+                const progress = bar.querySelector('.progress');
+                const button = bar.querySelector('.claim-button');
+                const width = parseFloat(progress.style.width);
+                if (width >= 100) {
+                    button.disabled = false;
+                    button.style.backgroundColor = "green"; // Cambia el color a verde cuando se habilita
+                } else {
+                    button.disabled = true;
+                    button.style.backgroundColor = "grey"; // Mantiene el color gris cuando está deshabilitado
+                }
+            });
+        }
+
+        function updateProgress(barId, stars, totalStars) {
+            const bar = document.getElementById(barId);
+            const progress = bar.querySelector('.progress');
+            const percentage = (stars / totalStars) * 100;
+            progress.style.width = Math.min(percentage, 100) + '%'; // Asegura que el porcentaje no supere 100%
+            progress.textContent = `${stars}/${totalStars}`;
+            checkProgress();
+        }
+
+        function updateMessage(stars, totalStars, messageId, reward) {
+            const message = document.getElementById(messageId);
+            if (stars >= totalStars) {
+                message.textContent = `¡Felicitaciones por alcanzar ${totalStars} bauchers! Has ganado ${reward} de nuestro servicio. Tu dedicación y esfuerzo son admirables. Sigue así y continúa participando para obtener aún más recompensas. ¡Estamos orgullosos de ti!`;
+            } else {
+                message.textContent = `¡Te faltan ${totalStars - stars} estrellas para alcanzar la meta de ${totalStars} estrellas!`;
+            }
+        }
+
+        // Ejemplo de uso:
+        updateProgress('progress-bar-40', 24, 40);
+        updateProgress('progress-bar-90', 24, 90);
+        updateProgress('progress-bar-150', 24, 150);
+
+        updateMessage(7, 40, 'message-40', '15 días gratis');
+        updateMessage(7, 90, 'message-90', 'un mes gratis');
+        updateMessage(7, 150, 'message-150', 'dos meses gratis');
+
+        addStars('stars-container-40', 17.5);
+        addStars('stars-container-90', 7.78);
+        addStars('stars-container-150', 4.67);
+        checkProgress();
+    </script>
+</body>
+</html>
+
+
+
+</head>
+<body>
+<body>
+    <div class="horizontal-container">
+        <div class="stars-container rotating">
+            <span class="big-star">⭐️</span>
+            <span class="big-star">⭐️</span>
+            <span class="big-star">⭐️</span>
+        </div>
+    
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Papeleria_pide_y_recoja_2021.png" alt="Tu Logo" class="logo">
+    
+        <div class="stars-container rotating">
+            <span class="big-star">⭐️</span>
+            <span class="big-star">⭐️</span>
+            <span class="big-star">⭐️</span>
+        </div>
+    </div>
+
+    <p>perfil: juan</p>
+    <p>Número de WASAP: 3184529221</p>
+    <p>cuando complete las estrellas podras reclamar tu cuenta.</p>
+    <p>Estrellas acumuladas: 64</p>
+
+    <style>
+        .horizontal-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .stars-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 20px;
+        }
+        .big-star {
+            font-size: 50px;
+            margin: 0 10px;
+            color: gold;
+        }
+        .logo {
+            margin: 0 20px;
+        }
+        .rotating .big-star {
+            animation: spin 5s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</body>
+
+
+
+   <h2>Progreso de Estrellas</h2>
+<div class="progress-bar" id="progress-bar-40">
+    <div class="progress" style="width: 160%;">64/40</div>
+    <button class="claim-button" onclick="showModal1()">Reclamar Premio 1</button>
+</div>
+<div class="stars-container" id="stars-container-40"></div>
+<p id="message-40">¡Has superado la meta de 40 estrellas! 🎉</p>
+
+<div class="progress-bar" id="progress-bar-90">
+    <div class="progress" style="width: 71.11%;">64/90</div>
+    <button class="claim-button" onclick="showModal2()" style="display: none;">Reclamar Premio 2</button>
+</div>
+<div class="stars-container" id="stars-container-90"></div>
+<p id="message-90">¡Te faltan 26 estrellas para alcanzar la meta de 90 estrellas!</p>
+
+<div class="progress-bar" id="progress-bar-150">
+    <div class="progress" style="width: 42.67%;">64/150</div>
+    <button class="claim-button" onclick="showModal3()" style="display: none;">Reclamar Premio 3</button>
+</div>
+<div class="stars-container" id="stars-container-150"></div>
+<p id="message-150">¡Te faltan 86 estrellas para alcanzar la meta de 150 estrellas!</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" class="netflix-logo">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg" alt="Disney Logo" class="disney-logo">
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Amazon_Prime_Video_logo.svg" alt="amazon prime video Logo" class="disney-logo">
+
+
+
+  
+    <p>¡Disfruta de tus recompensas! 🎉📺🎁</p>
+    
+    <div id="myModal1" class="modal" onclick="redirectToWhatsApp()">
+        <div class="modal-content">
+            <p>¡Felicitaciones por alcanzar 40 bauchers! Has ganado 15 días gratis de nuestro servicio. Tu dedicación y esfuerzo son admirables. Sigue así y continúa participando para obtener aún más recompensas. ¡Estamos orgullosos de ti!</p>
+        </div>
+    </div>
+
+    <div id="myModal2" class="modal" onclick="redirectToWhatsApp()">
+        <div class="modal-content">
+            <p>¡Felicitaciones por alcanzar 90 bauchers! Has ganado un mes gratis de nuestro servicio. Tu dedicación y esfuerzo son admirables. Sigue así y continúa participando para obtener aún más recompensas. ¡Estamos orgullosos de ti!</p>
+        </div>
+    </div>
+
+    <div id="myModal3" class="modal" onclick="redirectToWhatsApp()">
+        <div class="modal-content">
+            <p>¡Felicitaciones por alcanzar 150 bauchers! Has ganado dos meses gratis de nuestro servicio. Tu dedicación y esfuerzo son admirables. Sigue así y continúa participando para obtener aún más recompensas. ¡Estamos orgullosos de ti!</p>
+        </div>
+    </div>
+    <script>
+        
+        }
+
+        function showModal1() {
+            const modal = document.getElementById("myModal1");
+            modal.style.display = "block";
+            const audio = new Audio('https://www.soundjay.com/button/sounds/button-16.mp3');
+            audio.play();
+        }
+
+        function showModal2() {
+            const modal = document.getElementById("myModal2");
+            modal.style.display = "block";
+            const audio = new Audio('https://www.soundjay.com/button/sounds/button-16.mp3');
+            audio.play();
+        }
+
+        function showModal3() {
+            const modal = document.getElementById("myModal3");
+            modal.style.display = "block";
+            const audio = new Audio('https://www.soundjay.com/button/sounds/button-16.mp3');
+            audio.play();
+        }
+
+        function redirectToWhatsApp() {
+            const modal1 = document.getElementById("myModal1");
+            const modal2 = document.getElementById("myModal2");
+            const modal3 = document.getElementById("myModal3");
+            modal1.style.display = "none";
+            modal2.style.display = "none";
+            modal3.style.display = "none";
+            const message = encodeURIComponent("He completado los baucher y quisiera reclamar una de estas: Netflix - Crunchyroll - Paramount+ - Disney+ - Amazon Prime 😊🎉");
+            window.location.href = `https://wa.me/message/LRXRLEUAVZQOH1?text=${message}`;
+        }
+function checkProgress() {
+    const progressBars = document.querySelectorAll('.progress-bar');
+    progressBars.forEach(bar => {
+        const progress = bar.querySelector('.progress');
+        const button = bar.querySelector('.claim-button');
+        const width = parseFloat(progress.style.width);
+        if (width >= 100) {
+            button.style.display = "inline-block"; // Muestra el botón
+            button.disabled = false;
+            button.style.backgroundColor = "green"; // Cambia el color a verde cuando se habilita
+        } else {
+            button.style.display = "none"; // Oculta el botón si no se ha completado la barra
+        }
+    });
+}
+
+function updateProgress(barId, stars, totalStars) {
+    const bar = document.getElementById(barId);
+    const progress = bar.querySelector('.progress');
+    const percentage = (stars / totalStars) * 100;
+    progress.style.width = Math.min(percentage, 100) + '%'; // Asegura que el porcentaje no supere 100%
+    progress.textContent = `${stars}/${totalStars}`;
+    checkProgress();
+}
+
+function updateMessage(stars, totalStars, messageId, reward) {
+    const message = document.getElementById(messageId);
+    if (stars >= totalStars) {
+        message.textContent = `¡Felicitaciones por alcanzar ${totalStars} bauchers! Has ganado ${reward} de nuestro servicio. Tu dedicación y esfuerzo son admirables. Sigue así y continúa participando para obtener aún más recompensas. ¡Estamos orgullosos de ti!`;
+    } else {
+        message.textContent = `¡Te faltan ${totalStars - stars} estrellas para alcanzar la meta de ${totalStars} estrellas!`;
+    }
+}
+
+// Ejemplo de uso:
+updateProgress('progress-bar-40', 64, 40); // 64 estrellas de 40
+updateProgress('progress-bar-90', 13, 90); // 13 estrellas de 90
+updateProgress('progress-bar-150', 13, 150); // 13 estrellas de 150
+
+updateMessage(64, 40, 'message-40', '15 días gratis');
+updateMessage(13, 90, 'message-90', 'un mes gratis');
+updateMessage(13, 150, 'message-150', 'dos meses gratis');
+
+addStars('stars-container-40', 64 * (40 / 100)); // Proporción ajustada para las estrellas
+addStars('stars-container-90', 13 * (90 / 100));
+addStars('stars-container-150', 13 * (150 / 100));
+checkProgress();
+
+
+
+    </script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+
+</head>
+<body>
+    <body>
+    <div class="horizontal-container">
+        <div class="stars-container rotating">
+            <span class="big-star">⭐️</span>
+            <span class="big-star">⭐️</span>
+            <span class="big-star">⭐️</span>
+        </div>
+    
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Papeleria_pide_y_recoja_2021.png" alt="Tu Logo" class="logo">
+    
+        <div class="stars-container rotating">
+            <span class="big-star">⭐️</span>
+            <span class="big-star">⭐️</span>
+            <span class="big-star">⭐️</span>
+        </div>
+    </div>
+
+    <p>perfil : carlos</p>
+    <p>Número de WASAP: 3116723463</p>
+<p>Estrellas acumuladas: 13</p>
+
+    <style>
+        .horizontal-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .stars-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 20px;
+        }
+        .big-star {
+            font-size: 50px;
+            margin: 0 10px;
+            color: gold;
+        }
+        .logo {
+            margin: 0 20px;
+        }
+        .rotating .big-star {
+            animation: spin 5s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</body>
+
+
+<h2>Progreso de Estrellas</h2>
+<div class="progress-bar" id="progress-bar-40">
+    <div class="progress" style="width: 32.5%;">13/40</div>
+    <button class="claim-button" onclick="showModal1()" disabled>Reclamar Premio 1</button>
+</div>
+<div class="stars-container" id="stars-container-40"></div>
+<p id="message-40">¡Te faltan 27 estrellas para alcanzar la meta de 40 estrellas!</p>
+
+<div class="progress-bar" id="progress-bar-90">
+    <div class="progress" style="width: 14.44%;">13/90</div>
+    <button class="claim-button" onclick="showModal2()" disabled>Reclamar Premio 2</button>
+</div>
+<div class="stars-container" id="stars-container-90"></div>
+<p id="message-90">¡Te faltan 77 estrellas para alcanzar la meta de 90 estrellas!</p>
+
+<div class="progress-bar" id="progress-bar-150">
+    <div class="progress" style="width: 8.67%;">13/150</div>
+    <button class="claim-button" onclick="showModal3()" disabled>Reclamar Premio 3</button>
+</div>
+<div class="stars-container" id="stars-container-150"></div>
+<p id="message-150">¡Te faltan 137 estrellas para alcanzar la meta de 150 estrellas!</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" class="netflix-logo">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg" alt="Disney Logo" class="disney-logo">
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Amazon_Prime_Video_logo.svg" alt="amazon prime video Logo" class="disney-logo">
+
+
+   
+    
+    <p>¡Disfruta de tus recompensas! 🎉📺🎁</p>
+    
+
+    <div id="myModal1" class="modal" onclick="redirectToWhatsApp()">
+        <div class="modal-content">
+            <p>¡Felicitaciones por alcanzar 40 bauchers! Has ganado 15 días gratis de nuestro servicio. Tu dedicación y esfuerzo son admirables. Sigue así y continúa participando para obtener aún más recompensas. ¡Estamos orgullosos de ti!</p>
+        </div>
+    </div>
+
+    <div id="myModal2" class="modal" onclick="redirectToWhatsApp()">
+        <div class="modal-content">
+            <p>¡Felicitaciones por alcanzar 90 bauchers! Has ganado un mes gratis de nuestro servicio. Tu dedicación y esfuerzo son admirables. Sigue así y continúa participando para obtener aún más recompensas. ¡Estamos orgullosos de ti!</p>
+        </div>
+    </div>
+
+    <div id="myModal3" class="modal" onclick="redirectToWhatsApp()">
+        <div class="modal-content">
+            <p>¡Felicitaciones por alcanzar 150 bauchers! Has ganado dos meses gratis de nuestro servicio. Tu dedicación y esfuerzo son admirables. Sigue así y continúa participando para obtener aún más recompensas. ¡Estamos orgullosos de ti!</p>
+        </div>
+    </div>
+
+    <script>
+        
+            
+        }
+
+        function showModal1() {
+            const modal = document.getElementById("myModal1");
+            modal.style.display = "block";
+            const audio = new Audio('https://www.soundjay.com/button/sounds/button-16.mp3');
+            audio.play();
+        }
+
+        function showModal2() {
+            const modal = document.getElementById("myModal2");
+            modal.style.display = "block";
+            const audio = new Audio('https://www.soundjay.com/button/sounds/button-16.mp3');
+            audio.play();
+        }
+
+        function showModal3() {
+            const modal = document.getElementById("myModal3");
+            modal.style.display = "block";
+            const audio = new Audio('https://www.soundjay.com/button/sounds/button-16.mp3');
+            audio.play();
+        }
+
+        function redirectToWhatsApp() {
+            const modal1 = document.getElementById("myModal1");
+            const modal2 = document.getElementById("myModal2");
+            const modal3 = document.getElementById("myModal3");
+            modal1.style.display = "none";
+            modal2.style.display = "none";
+            modal3.style.display = "none";
+            const message = encodeURIComponent("He completado los baucher y quisiera reclamar una de estas: Netflix - Crunchyroll - Paramount+ - Disney+ - Amazon Prime 😊🎉");
+            window.location.href = `https://wa.me/message/LRXRLEUAVZQOH1?text=${message}`;
+        }
+
+       function checkProgress() {
+    const progressBars = document.querySelectorAll('.progress-bar');
+    progressBars.forEach(bar => {
+        const progress = bar.querySelector('.progress');
+        const button = bar.querySelector('.claim-button');
+        const width = parseFloat(progress.style.width);
+        if (width >= 100) {
+            button.disabled = false;
+            button.style.backgroundColor = "green"; // Cambia el color a verde cuando se habilita
+        } else {
+            button.disabled = true;
+            button.style.backgroundColor = "grey"; // Mantiene el color gris cuando está deshabilitado
+        }
+    });
+}
+
+function updateProgress(barId, stars, totalStars) {
+    const bar = document.getElementById(barId);
+    const progress = bar.querySelector('.progress');
+    const percentage = (stars / totalStars) * 100;
+    progress.style.width = Math.min(percentage, 100) + '%'; // Asegura que el porcentaje no supere 100%
+    progress.textContent = `${stars}/${totalStars}`;
+    checkProgress();
+}
+
+function updateMessage(stars, totalStars, messageId, reward) {
+    const message = document.getElementById(messageId);
+    if (stars >= totalStars) {
+        message.textContent = `¡Felicitaciones por alcanzar ${totalStars} bauchers! Has ganado ${reward} de nuestro servicio. Tu dedicación y esfuerzo son admirables. Sigue así y continúa participando para obtener aún más recompensas. ¡Estamos orgullosos de ti!`;
+    } else {
+        message.textContent = `¡Te faltan ${totalStars - stars} estrellas para alcanzar la meta de ${totalStars} estrellas!`;
+    }
+}
+
+// Ejemplo de uso:
+updateProgress('progress-bar-40', 13, 40); // 13 estrellas de 40
+updateProgress('progress-bar-90', 13, 90); // 13 estrellas de 90
+updateProgress('progress-bar-150', 13, 150); // 13 estrellas de 150
+
+updateMessage(13, 40, 'message-40', '15 días gratis');
+updateMessage(13, 90, 'message-90', 'un mes gratis');
+updateMessage(13, 150, 'message-150', 'dos meses gratis');
+
+addStars('stars-container-40', 13 * (40 / 100)); // Proporción ajustada para las estrellas
+addStars('stars-container-90', 13 * (90 / 100));
+addStars('stars-container-150', 13 * (150 / 100));
+checkProgress();
+
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+
+</head>
+<body>
+    <body>
+    <div class="horizontal-container">
+        <div class="stars-container rotating">
+            <span class="big-star">⭐️</span>
+            <span class="big-star">⭐️</span>
+            <span class="big-star">⭐️</span>
+        </div>
+    
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Papeleria_pide_y_recoja_2021.png" alt="Tu Logo" class="logo">
+    
+        <div class="stars-container rotating">
+            <span class="big-star">⭐️</span>
+            <span class="big-star">⭐️</span>
+            <span class="big-star">⭐️</span>
+        </div>
+    </div>
+
+    <p>perfil: diana</p>
+   <p>Número de WASAP: 3182897714</p>
+    <p>Estrellas acumuladas: 27</p>
+
+    <style>
+        .horizontal-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .stars-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 20px;
+        }
+        .big-star {
+            font-size: 50px;
+            margin: 0 10px;
+            color: gold;
+        }
+        .logo {
+            margin: 0 20px;
+        }
+        .rotating .big-star {
+            animation: spin 5s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</body>
+
+
+<h2>Progreso de Estrellas</h2>
+<div class="progress-bar" id="progress-bar-40">
+    <div class="progress" style="width: 67.5%;">27/40</div>
+    <button class="claim-button" onclick="showModal1()" disabled>Reclamar Premio 1</button>
+</div>
+<div class="stars-container" id="stars-container-40"></div>
+<p id="message-40">¡Te faltan 13 estrellas para alcanzar la meta de 40 estrellas!</p>
+
+<div class="progress-bar" id="progress-bar-90">
+    <div class="progress" style="width: 30%;">27/90</div>
+    <button class="claim-button" onclick="showModal2()" disabled>Reclamar Premio 2</button>
+</div>
+<div class="stars-container" id="stars-container-90"></div>
+<p id="message-90">¡Te faltan 63 estrellas para alcanzar la meta de 90 estrellas!</p>
+
+<div class="progress-bar" id="progress-bar-150">
+    <div class="progress" style="width: 18%;">27/150</div>
+    <button class="claim-button" onclick="showModal3()" disabled>Reclamar Premio 3</button>
+</div>
+<div class="stars-container" id="stars-container-150"></div>
+<p id="message-150">¡Te faltan 123 estrellas para alcanzar la meta de 150 estrellas!</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" class="netflix-logo">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg" alt="Disney Logo" class="disney-logo">
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Amazon_Prime_Video_logo.svg" alt="amazon prime video Logo" class="disney-logo">
+
+    
+ 
+    <p>¡Disfruta de tus recompensas! 🎉📺🎁</p>
+  
+
+    <div id="myModal1" class="modal" onclick="redirectToWhatsApp()">
+        <div class="modal-content">
+            <p>¡Felicitaciones por alcanzar 40 bauchers! Has ganado 15 días gratis de nuestro servicio. Tu dedicación y esfuerzo son admirables. Sigue así y continúa participando para obtener aún más recompensas. ¡Estamos orgullosos de ti!</p>
+        </div>
+    </div>
+
+    <div id="myModal2" class="modal" onclick="redirectToWhatsApp()">
+        <div class="modal-content">
+            <p>¡Felicitaciones por alcanzar 90 bauchers! Has ganado un mes gratis de nuestro servicio. Tu dedicación y esfuerzo son admirables. Sigue así y continúa participando para obtener aún más recompensas. ¡Estamos orgullosos de ti!</p>
+        </div>
+    </div>
+
+    <div id="myModal3" class="modal" onclick="redirectToWhatsApp()">
+        <div class="modal-content">
+            <p>¡Felicitaciones por alcanzar 150 bauchers! Has ganado dos meses gratis de nuestro servicio. Tu dedicación y esfuerzo son admirables. Sigue así y continúa participando para obtener aún más recompensas. ¡Estamos orgullosos de ti!</p>
+        </div>
+    </div>
+
+    <script>
+        
+            
+        }
+
+        function showModal1() {
+            const modal = document.getElementById("myModal1");
+            modal.style.display = "block";
+            const audio = new Audio('https://www.soundjay.com/button/sounds/button-16.mp3');
+            audio.play();
+        }
+
+        function showModal2() {
+            const modal = document.getElementById("myModal2");
+            modal.style.display = "block";
+            const audio = new Audio('https://www.soundjay.com/button/sounds/button-16.mp3');
+            audio.play();
+        }
+
+        function showModal3() {
+            const modal = document.getElementById("myModal3");
+            modal.style.display = "block";
+            const audio = new Audio('https://www.soundjay.com/button/sounds/button-16.mp3');
+            audio.play();
+        }
+
+        function redirectToWhatsApp() {
+            const modal1 = document.getElementById("myModal1");
+            const modal2 = document.getElementById("myModal2");
+            const modal3 = document.getElementById("myModal3");
+            modal1.style.display = "none";
+            modal2.style.display = "none";
+            modal3.style.display = "none";
+            const message = encodeURIComponent("He completado los baucher y quisiera reclamar una de estas: Netflix - Crunchyroll - Paramount+ - Disney+ - Amazon Prime 😊🎉");
+            window.location.href = `https://wa.me/message/LRXRLEUAVZQOH1?text=${message}`;
+        }
+
+        function checkProgress() {
+            const progressBars = document.querySelectorAll('.progress-bar');
+            progressBars.forEach(bar => {
+                const progress = bar.querySelector('.progress');
+                const button = bar.querySelector('.claim-button');
+                const width = parseFloat(progress.style.width);
+                if (width >= 100) {
+                    button.disabled = false;
+                } else {
+                    button.disabled = true;
+                }
+            });
+        }
+
+        function updateProgress(barId, stars, totalStars) {
+            const bar = document.getElementById(barId);
+            const progress = bar.querySelector('.progress');
+            const percentage = (stars / totalStars) * 100;
+            progress.style.width = percentage + '%';
+            progress.textContent = `${stars}/${totalStars}`;
+            checkProgress();
+        }
+
+        function updateMessage(stars, totalStars, messageId, reward) {
+            const message = document.getElementById(messageId);
+            if (stars >= totalStars) {
+                message.textContent = `¡Felicitaciones por alcanzar ${totalStars} bauchers! Has ganado ${reward} de nuestro servicio. Tu dedicación y esfuerzo son admirables. Sigue así y continúa participando para obtener aún más recompensas. ¡Estamos orgullosos de ti!`;
+            } else {
+                message.textContent = `¡Te faltan ${totalStars - stars} estrellas para alcanzar la meta de ${totalStars} estrellas!`;
+            }
+        }
+
+        // Ejemplo de uso:
+        updateProgress('progress-bar-40', 24, 40);
+        updateProgress('progress-bar-90', 24, 90);
+        updateProgress('progress-bar-150', 24, 150);
+
+        updateMessage(7, 40, 'message-40', '15 días gratis');
+        updateMessage(7, 90, 'message-90', 'un mes gratis');
+        updateMessage(7, 150, 'message-150', 'dos meses gratis');
+
+        addStars('stars-container-40', 17.5);
+        addStars('stars-container-90', 7.78);
+        addStars('stars-container-150', 4.67);
+        checkProgress();
+    </script>
+
+</body>
+</html>
+
+</head>
+<body>
+    <body>
+    <div class="horizontal-container">
+        <div class="stars-container rotating">
+            <span class="big-star">⭐️</span>
+            <span class="big-star">⭐️</span>
+            <span class="big-star">⭐️</span>
+        </div>
+    
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Papeleria_pide_y_recoja_2021.png" alt="Tu Logo" class="logo">
+    
+        <div class="stars-container rotating">
+            <span class="big-star">⭐️</span>
+            <span class="big-star">⭐️</span>
+            <span class="big-star">⭐️</span>
+        </div>
+    </div>
+
+    <p>perfil: eduar</p>
+   <p>Número de WASAP: 3161976804</p>
+    <p>Estrellas acumuladas: 7</p>
+
+    <style>
+        .horizontal-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .stars-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 20px;
+        }
+        .big-star {
+            font-size: 50px;
+            margin: 0 10px;
+            color: gold;
+        }
+        .logo {
+            margin: 0 20px;
+        }
+        .rotating .big-star {
+            animation: spin 5s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</body>
+
+
+<h2>Progreso de Estrellas</h2>
+<div class="progress-bar" id="progress-bar-40">
+    <div class="progress" style="width: 17.5%;">7/40</div>
+    <button class="claim-button" onclick="showModal1()" disabled>Reclamar Premio 1</button>
+</div>
+<div class="stars-container" id="stars-container-40"></div>
+<p id="message-40">¡Te faltan 33 estrellas para alcanzar la meta de 40 estrellas!</p>
+
+<div class="progress-bar" id="progress-bar-90">
+    <div class="progress" style="width: 7.78%;">7/90</div>
+    <button class="claim-button" onclick="showModal2()" disabled>Reclamar Premio 2</button>
+</div>
+<div class="stars-container" id="stars-container-90"></div>
+<p id="message-90">¡Te faltan 83 estrellas para alcanzar la meta de 90 estrellas!</p>
+
+<div class="progress-bar" id="progress-bar-150">
+    <div class="progress" style="width: 4.67%;">7/150</div>
+    <button class="claim-button" onclick="showModal3()" disabled>Reclamar Premio 3</button>
+</div>
+<div class="stars-container" id="stars-container-150"></div>
+<p id="message-150">¡Te faltan 143 estrellas para alcanzar la meta de 150 estrellas!</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" class="netflix-logo">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg" alt="Disney Logo" class="disney-logo">
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Amazon_Prime_Video_logo.svg" alt="amazon prime video Logo" class="disney-logo">
+
+ 
+    <p>¡Disfruta de tus recompensas! 🎉📺🎁</p>
+  
+
+    <div id="myModal1" class="modal" onclick="redirectToWhatsApp()">
+        <div class="modal-content">
+            <p>¡Felicitaciones por alcanzar 40 bauchers! Has ganado 15 días gratis de nuestro servicio. Tu dedicación y esfuerzo son admirables. Sigue así y continúa participando para obtener aún más recompensas. ¡Estamos orgullosos de ti!</p>
+        </div>
+    </div>
+
+    <div id="myModal2" class="modal" onclick="redirectToWhatsApp()">
+        <div class="modal-content">
+            <p>¡Felicitaciones por alcanzar 90 bauchers! Has ganado un mes gratis de nuestro servicio. Tu dedicación y esfuerzo son admirables. Sigue así y continúa participando para obtener aún más recompensas. ¡Estamos orgullosos de ti!</p>
+        </div>
+    </div>
+
+    <div id="myModal3" class="modal" onclick="redirectToWhatsApp()">
+        <div class="modal-content">
+            <p>¡Felicitaciones por alcanzar 150 bauchers! Has ganado dos meses gratis de nuestro servicio. Tu dedicación y esfuerzo son admirables. Sigue así y continúa participando para obtener aún más recompensas. ¡Estamos orgullosos de ti!</p>
+        </div>
+    </div>
+
+    <script>
+        
+            }
+        }
+
+        function showModal1() {
+            const modal = document.getElementById("myModal1");
+            modal.style.display = "block";
+            const audio = new Audio('https://www.soundjay.com/button/sounds/button-16.mp3');
+            audio.play();
+        }
+
+        function showModal2() {
+            const modal = document.getElementById("myModal2");
+            modal.style.display = "block";
+            const audio = new Audio('https://www.soundjay.com/button/sounds/button-16.mp3');
+            audio.play();
+        }
+
+        function showModal3() {
+            const modal = document.getElementById("myModal3");
+            modal.style.display = "block";
+            const audio = new Audio('https://www.soundjay.com/button/sounds/button-16.mp3');
+            audio.play();
+        }
+
+        function redirectToWhatsApp() {
+            const modal1 = document.getElementById("myModal1");
+            const modal2 = document.getElementById("myModal2");
+            const modal3 = document.getElementById("myModal3");
+            modal1.style.display = "none";
+            modal2.style.display = "none";
+            modal3.style.display = "none";
+            const message = encodeURIComponent("He completado los baucher y quisiera reclamar una de estas: Netflix - Crunchyroll - Paramount+ - Disney+ - Amazon Prime 😊🎉");
+            window.location.href = `https://wa.me/message/LRXRLEUAVZQOH1?text=${message}`;
+        }
+
+        function checkProgress() {
+    const progressBars = document.querySelectorAll('.progress-bar');
+    progressBars.forEach(bar => {
+        const progress = bar.querySelector('.progress');
+        const button = bar.querySelector('.claim-button');
+        const width = parseFloat(progress.style.width);
+        if (width >= 100) {
+            button.disabled = false;
+            button.style.backgroundColor = "green"; // Cambia el color a verde cuando se habilita
+        } else {
+            button.disabled = true;
+            button.style.backgroundColor = "grey"; // Mantiene el color gris cuando está deshabilitado
+        }
+    });
+}
+
+function updateProgress(barId, stars, totalStars) {
+    const bar = document.getElementById(barId);
+    const progress = bar.querySelector('.progress');
+    const percentage = (stars / totalStars) * 100;
+    progress.style.width = Math.min(percentage, 100) + '%'; // Asegura que el porcentaje no supere 100%
+    progress.textContent = `${stars}/${totalStars}`;
+    checkProgress();
+}
+
+function updateMessage(stars, totalStars, messageId, reward) {
+    const message = document.getElementById(messageId);
+    if (stars >= totalStars) {
+        message.textContent = `¡Felicitaciones por alcanzar ${totalStars} bauchers! Has ganado ${reward} de nuestro servicio. Tu dedicación y esfuerzo son admirables. Sigue así y continúa participando para obtener aún más recompensas. ¡Estamos orgullosos de ti!`;
+    } else {
+        message.textContent = `¡Te faltan ${totalStars - stars} estrellas para alcanzar la meta de ${totalStars} estrellas!`;
+    }
+}
+
+// Ejemplo de uso:
+updateProgress('progress-bar-40', 7, 40); // 7 estrellas de 40
+updateProgress('progress-bar-90', 7, 90); // 7 estrellas de 90
+updateProgress('progress-bar-150', 7, 150); // 7 estrellas de 150
+
+updateMessage(7, 40, 'message-40', '15 días gratis');
+updateMessage(7, 90, 'message-90', 'un mes gratis');
+updateMessage(7, 150, 'message-150', 'dos meses gratis');
+
+addStars('stars-container-40', 7 * (40 / 100)); // Proporción ajustada para las estrellas
+addStars('stars-container-90', 7 * (90 / 100));
+addStars('stars-container-150', 7 * (150 / 100)); // Proporción ajustada para las estrellas
+
+</script>
+
+</body>
+</html>
